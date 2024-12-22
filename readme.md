@@ -44,3 +44,12 @@ Crie um arquivo `.env` na pasta `utils` e configure as seguintes variáveis:
 
 
 ### Importante cuidas os acessos disopnibilizados no Azure, a aplicação deve possuir acesso para poder adicionar as imagens, ler e utilizar o Document Intelligence
+
+
+## Onde obter os dados:
+
+CONTAINER_NAME: ![CONTAINER_NAME](src/img/CONTAINER_NAME.png)
+AZURE_STOREGE_CONNECTION_STRING: ![AZURE_STOREGE_CONNECTION_STRING](src/img/AZURE_STOREGE_CONNECTION_STRING.png.png)
+ENDPOINT: ![ENDPOINT](src/img/ENDPOINT.png)
+SUBSCRIPTION-KEY: ![SUBSCRIPTION-KEY](src/img/SUBSCRIPTION-KEY.png)
+
