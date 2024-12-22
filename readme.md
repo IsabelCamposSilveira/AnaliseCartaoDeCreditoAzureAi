@@ -25,26 +25,7 @@ Para rodar o projeto, é necessário configurar os seguintes serviços no Azure:
 git clone <URL_DO_REPOSITORIO>
 cd <NOME_DO_REPOSITORIO>
 
-### 2. Configuração das Variáveis de Ambiente
-
-Crie um arquivo `.env` na pasta `utils` e configure as seguintes variáveis:
-
-- `ENDPOINT`: Endpoint do Azure Document Intelligence.
-- `SUBSCRIPTION_KEY`: Chave de assinatura do serviço de Document Intelligence.
-- `AZURE_STORAGE_CONNECTION_STRING`: String de conexão do Azure Blob Storage.
-- `CONTAINER_NAME`: Nome do container criado no Blob Storage para armazenar as imagens.
-
-### 3. Adicionar os requirements
-
-- pip install -r requirements.txt
-
-### 4. Rodar o programa
-
-- Abrir no terminal a pasta src e utilizar `streamlit run .\app.py`
-
-
-### Importante cuidas os acessos disopnibilizados no Azure, a aplicação deve possuir acesso para poder adicionar as imagens, ler e utilizar o Document Intelligence
-
+### 2. Renomear o .env copy para ".env" e preencher os dados
 
 ## Onde obter os dados:
 
@@ -56,4 +37,22 @@ Crie um arquivo `.env` na pasta `utils` e configure as seguintes variáveis:
 ![ENDPOINT](src/img/ENDPOINT.png)
 - SUBSCRIPTION-KEY: 
 ![SUBSCRIPTION-KEY](src/img/SUBSCRIPTION-KEY.png)
+
+
+## Permissões necessárias:
+
+- A conta de armazenamento deve ter "acesso anonimo ao blob" habilitado
+![permissaoBlob](src/img/permissaoBlob.png)
+
+- Container deve estar com o nivel de acesso "Container (anonimo)"
+![permissaoBlob](src/img/permissaoBlob1.png)
+
+### 3. Adicionar os requirements
+
+- pip install -r requirements.txt
+
+### 4. Rodar o programa
+
+- Abrir no terminal a pasta src e utilizar `streamlit run .\app.py`
+
 
